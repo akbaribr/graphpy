@@ -4,7 +4,7 @@ from pygame.locals import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
-vertices = ((0,5,0),(2,0,2),(-2,0,2),(-2,0,-2),(2,0,-2))
+vertices = ((0,5,0),(5,0,5),(-5,0,5),(-5,0,-5),(5,0,-5))
 edges = ((0,1),(0,2),(0,3),(0,4),(1,2),(2,3),(3,4),(1,4))
 fields = ((0,1,2),(0,2,3),(0,3,4),(0,4,1),(1,2,3,4))
 
@@ -32,7 +32,7 @@ def main():
     glRotatef(25, 2, 1, 0)
 
     wire_obj()
-    #solid_obj()
+    solid_obj()
     pygame.display.flip()
 
     while True:
